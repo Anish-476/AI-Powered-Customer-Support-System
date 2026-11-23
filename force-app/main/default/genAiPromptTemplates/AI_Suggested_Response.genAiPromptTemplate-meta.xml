@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>suqOCuMVlFaVDBpMBC7Y4tQJq86P9WeVX4JE4ByBgdI=_1</activeVersionIdentifier>
+    <developerName>AI_Suggested_Response</developerName>
+    <masterLabel>AI Suggested Response</masterLabel>
+    <overridable>false</overridable>
+    <relatedEntity>Case</relatedEntity>
+    <relatedField>Case.AI_Suggested_Response__c</relatedField>
+    <templateVersions>
+        <content>You are a customer support agent.
+​Based on the following case details, generate a polite, professional, and helpful reply.
+​Issue Type: {{Input.Case.Issue_Type__c}} 
+Priority: {{Input.Case.Priority}}
+Customer Description: {{Input.Case.Description}}
+⁠
+​Provide a clear response that helps the customer resolve the issue.
+​⁠</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Case</definition>
+            <referenceName>Input.Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Published</status>
+        <templateFormat>Jinja</templateFormat>
+        <versionIdentifier>suqOCuMVlFaVDBpMBC7Y4tQJq86P9WeVX4JE4ByBgdI=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

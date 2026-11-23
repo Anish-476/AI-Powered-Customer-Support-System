@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <types>
+        <members>Case</members>
+        <name>CustomObject</name>
+    </types>
+
+    
+
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>GenAiPromptTemplate</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>AiAgentDefinition</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>AiAgentDefinitionVersion</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>AiAuthoringBundle</name>
+    </types>
+
+    <version>68.0</version>
+</Package>
